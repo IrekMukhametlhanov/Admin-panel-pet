@@ -1,11 +1,11 @@
-import React, { Suspense, useContext, useState } from "react";
+import React, { Suspense} from "react";
 import { Routes, Route } from "react-router-dom";
 import "./styles/index.scss";
 import { Link } from "react-router-dom";
-import { AboutPageAsync } from "./pages/AboutPage/AboutPage.async";
-import { MainPageAsync } from "./pages/MainPage/MainPage.async";
-import { useTheme } from "./theme/useTheme";
-import { classNames } from "./helpers/classNames/classNames";
+import { AboutPageAsync } from "pages/AboutPage";
+import { MainPageAsync } from "pages/MainPage";
+import { useTheme } from "./providers/ThemeProvider/lib/useTheme";
+import { classNames } from "shared/lib/classNames";
 
 
 export const App = () => {
