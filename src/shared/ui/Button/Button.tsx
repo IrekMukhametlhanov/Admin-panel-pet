@@ -24,6 +24,7 @@ export const Button: FC<ButtonProps> = (props) => {
                 { [cls[theme]]: true },
                 [className],
             )}
+            /* eslint-disable-next-line react/jsx-props-no-spreading */
             {...otherProps}
         >
             {' '}
