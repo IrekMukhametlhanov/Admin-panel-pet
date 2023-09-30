@@ -2,5 +2,8 @@
     "тестовый перевод": "test exapmle",
     "язык" : "Russia",
     "загрузка": "loading...",
-    "сдвинуть": "toggle"
+    "сдвинуть": "toggle",
+    "страница не найдена" : "Not found page",
+    "Возникла ошибка" : "Is not working",
+    "Обновите страницу" :"RELOAD PAGE"
 }

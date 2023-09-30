@@ -11,7 +11,7 @@ className?: string;
 
 export const Sidebar = ({ className }:SidebarProps) => {
     const { t, i18n } = useTranslation();
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
 
     const onToggle = () => {
         setCollapsed((prev) => !prev);
