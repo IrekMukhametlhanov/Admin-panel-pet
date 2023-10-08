@@ -1,17 +1,13 @@
-import React from "react"
-import './PageLoader.scss';
-import { classNames } from "shared/lib/classNames";
+import { classNames } from 'shared/lib/classNames/classNames';
+import { Loader } from 'shared/ui/Loader/Loader';
+import cls from './PageLoader.module.scss';
 
-
-interface PageLoaderProps{
-className?: string;
+interface PageLoaderProps {
+    className?: string;
 }
 
- export const PageLoader = ({className}:PageLoaderProps) => {
-  return (
-    <div className={classNames("Page__Loader", {}, [className])}>
-      <div className="lds-hourglass"></div>
+export const PageLoader = ({ className }: PageLoaderProps) => (
+    <div className={classNames(cls.PageLoader, {}, [className])}>
+        <Loader />
     </div>
-  )
-};
-
+);
