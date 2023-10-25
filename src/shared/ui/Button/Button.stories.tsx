@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { Button, ThemeButton } from './Button';
+import { Button, ButtonSize, ThemeButton } from './Button';
 
 export default {
     title: 'shared/Button',
@@ -44,6 +44,53 @@ PrimaryBtnDark.args = {
     children: 'Text',
     theme: ThemeButton.Primary
 }
+
+export const BACKGROUND_Inverted = Template.bind({});
+BACKGROUND_Inverted.args = {
+    children: 'Text',
+    theme: ThemeButton.BACKGROUND_Inverted
+}
+
+export const BACKGROUND = Template.bind({});
+BACKGROUND.args = {
+    children: 'Text',
+    theme: ThemeButton.BACKGROUND
+}
+
+export const square = Template.bind({});
+square.args = {
+    children: '>',
+    theme: ThemeButton.BACKGROUND,
+    square: true
+}
+
+export const squareSizeM = Template.bind({});
+squareSizeM.args = {
+    children: '>',
+    theme: ThemeButton.BACKGROUND,
+    square: true,
+    size: ButtonSize.m
+}
+
+export const squareSizel = Template.bind({});
+squareSizel.args = {
+    children: '>',
+    theme: ThemeButton.BACKGROUND,
+    square: true,
+    size: ButtonSize.l
+}
+
+export const squareSizeXl = Template.bind({});
+squareSizeXl.args = {
+    children: '>',
+    theme: ThemeButton.BACKGROUND,
+    square: true,
+    size: ButtonSize.xl
+}
+
+
+
+
 
 
 

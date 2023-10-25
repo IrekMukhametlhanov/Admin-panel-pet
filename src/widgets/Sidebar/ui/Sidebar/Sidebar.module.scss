@@ -1,23 +1,52 @@
 .Sidebar {
-    height: calc(100vh - var(--navbar-height));
-    width: var(--sidebar-width);
-    background: var(--inverted-bg-color);
-    position: relative;
-    transition: width 0.3s;
+  height: calc(100vh - var(--navbar-height));
+  width: var(--sidebar-width);
+  background: var(--inverted-bg-color);
+  position: relative;
+  transition: width 0.3s;
+}
+
+
+
+.collapsedBtn {
+  position: absolute;
+  right: -40px;
+  bottom: 40px;
+}
+
+.items {
+  margin-top: 20px;
+  margin-left: 1cqi;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  margin-left: 10px;
+}
+
+.icon {
+  fill: var(--inverted-primary-color);
 }
 
 .collapsed {
-    width: var(--sidebar-width-collapsed);
-}
+  width: var(--sidebar-width-collapsed);
 
-.switchers {
+  .switchers {
+    flex-direction: column;
     position: absolute;
     bottom: 20px;
     display: flex;
     justify-content: center;
     width: 100%;
-}
+  }
 
-.lang {
+  .lang {
     margin-left: 20px;
+  }
+  .link{
+    opacity: 0;
+    transition: 0.5s opacity;
+    width: 0;
+  }
 }
