@@ -8,8 +8,7 @@ interface LangSwitcherProps {
     short: boolean;
 }
 
-
-export const LangSwitcher:FC<Partial<LangSwitcherProps>> = ({className, short}:LangSwitcherProps) => {
+export const LangSwitcher:FC<Partial<LangSwitcherProps>> = ({ className, short }:LangSwitcherProps) => {
     const { t, i18n } = useTranslation();
 
     const toggle = async () => {
@@ -22,7 +21,7 @@ export const LangSwitcher:FC<Partial<LangSwitcherProps>> = ({className, short}:L
             theme={ThemeButton.CLEAR}
             onClick={toggle}
         >
-            {t(short ? 'Короткий Язык' :'Язык' )}
+            {t(short ? 'Короткий Язык' : 'Язык')}
         </Button>
     );
 };

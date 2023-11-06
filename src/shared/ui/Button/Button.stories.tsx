@@ -36,63 +36,57 @@ OutlineDark.args = {
 export const PrimaryBtn = Template.bind({});
 PrimaryBtn.args = {
     children: 'Text',
-    theme: ThemeButton.Primary
-}
+    theme: ThemeButton.Primary,
+};
 
 export const PrimaryBtnDark = Template.bind({});
 PrimaryBtnDark.args = {
     children: 'Text',
-    theme: ThemeButton.Primary
-}
+    theme: ThemeButton.Primary,
+};
 
 export const BACKGROUND_Inverted = Template.bind({});
 BACKGROUND_Inverted.args = {
     children: 'Text',
-    theme: ThemeButton.BACKGROUND_Inverted
-}
+    theme: ThemeButton.BACKGROUND_Inverted,
+};
 
 export const BACKGROUND = Template.bind({});
 BACKGROUND.args = {
     children: 'Text',
-    theme: ThemeButton.BACKGROUND
-}
+    theme: ThemeButton.BACKGROUND,
+};
 
 export const square = Template.bind({});
 square.args = {
     children: '>',
     theme: ThemeButton.BACKGROUND,
-    square: true
-}
+    square: true,
+};
 
 export const squareSizeM = Template.bind({});
 squareSizeM.args = {
     children: '>',
     theme: ThemeButton.BACKGROUND,
     square: true,
-    size: ButtonSize.m
-}
+    size: ButtonSize.m,
+};
 
 export const squareSizel = Template.bind({});
 squareSizel.args = {
     children: '>',
     theme: ThemeButton.BACKGROUND,
     square: true,
-    size: ButtonSize.l
-}
+    size: ButtonSize.l,
+};
 
 export const squareSizeXl = Template.bind({});
 squareSizeXl.args = {
     children: '>',
     theme: ThemeButton.BACKGROUND,
     square: true,
-    size: ButtonSize.xl
-}
-
-
-
-
-
-
+    size: ButtonSize.xl,
+};
 
 OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];
 PrimaryBtnDark.decorators = [ThemeDecorator(Theme.DARK)];

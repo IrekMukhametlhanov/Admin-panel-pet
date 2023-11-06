@@ -17,13 +17,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     size?: ButtonSize;
 }
 
-
 export enum ButtonSize{
     m= 'size_m',
     l= 'size_l',
     xl= 'size_xl'
 }
-
 
 export const Button: FC<ButtonProps> = (props) => {
     const {
@@ -38,8 +36,8 @@ export const Button: FC<ButtonProps> = (props) => {
     const mods: Record<string, boolean> = {
         [cls[theme]]: true,
         [cls.square]: square,
-        [cls[size]]:true
-    }
+        [cls[size]]: true,
+    };
 
     return (
         <button
